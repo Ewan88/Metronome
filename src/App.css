@@ -11,3 +11,9 @@ p.bpm-indicator {
   align-self: flex-end;
   color: grey;
 }
+
+button {
+  font-size: x-large;
+  background-color: blue;
+  color: white;
+}
