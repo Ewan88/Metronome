@@ -1,3 +1,13 @@
 body {
   text-align: center;
 }
+
+div.bpm-indicator {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+p.bpm-indicator {
+  align-self: flex-end;
+  color: grey;
+}

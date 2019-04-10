@@ -1,17 +1,12 @@
 import React from 'react';
+import Metronome from '../components/Metronome';
 
 class MetronomeContainer extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      rate: 100,
-    };
-  }
-
   render(){
     return(
       <div id="metronome-container">
         <h2>Metronome</h2>
+        <Metronome/>
       </div>
     )
   }
