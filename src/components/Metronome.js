@@ -6,8 +6,12 @@ class Metronome extends React.Component {
     this.state = {
       bpm: 100
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
+  handleChange(event){
+    this.setState({bpm: event.target.value});
+  }
 
   render(){
     return (
@@ -18,7 +22,8 @@ class Metronome extends React.Component {
         </div>
         <div className="bpm-slider">
           <input type="range" id="slider" name="bpm"
-          min="40" max="218" value={this.state.bpm}></input>
+          min="40" max="218" value={this.state.bpm}
+          onChange={this.handleChange}></input>
         </div>
       </div>
     );
